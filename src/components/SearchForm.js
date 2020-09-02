@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SearchForm({ params, onParamChange }) {
   return (
-    <form className="">
+    <form className="form">
       <input
         onChange={onParamChange}
         type="text"
@@ -11,12 +11,14 @@ export default function SearchForm({ params, onParamChange }) {
         placeholder="description"
       />
       <input
+        className="loc"
         onChange={onParamChange}
         type="text"
         name="location"
         value={params.location}
         placeholder="location"
       />
+      
     </form>
   );
 }

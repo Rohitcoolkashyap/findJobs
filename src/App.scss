@@ -1,23 +1,84 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+
+}
+
 .job {
   margin: 20px;
   padding: 10px 20px;
   border: 2px solid rgb(209, 206, 206);
   position: relative;
 }
+
 .heading {
   margin: 10px 20px;
+  color: rgb(24, 141, 180);
 }
+
 .job-title {
   margin-right: 6px;
+  margin-bottom: 4px;
 }
+
+.loading {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 a {
   text-decoration: none;
-  color:rgb(50, 142, 218);
+  color: rgb(1, 95, 172);
 }
-.logo{
-    position: absolute;
-    right:10px;
-    top:20px;
 
-    width: 50px;
+li {
+  list-style: none;
+  margin-bottom: 6px;
+}
+
+.logo {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+
+  width: 50px;
+}
+
+.form {
+  margin: 10px 20px;
+
+  input {
+    width: 30%;
+    padding: 6px;
+    border-radius: 4px;
+    margin-right: 20px;
+    border: 1px solid rgb(122, 120, 120);
+    font-size: 16px;
+    background-color: white;
+
+
+    &:focus {
+      border-color: rgb(92, 92, 241);
+    }
+  }
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+  .form {
+    input {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+  }
+
+
 }

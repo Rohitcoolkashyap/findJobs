@@ -17,12 +17,12 @@ function App() {
   }
   return (
     <div className="container">
-      <h2 className="heading">jobs opening</h2>
+      <h2 className="heading">Jobs opening</h2>
       <SearchForm
         params={params}
         onParamChange={handleParamChange}
       ></SearchForm>
-      {loading && <h2>loading...</h2>}
+      {loading && <img className="loading" src="200.gif" alt=""></img>}
       {error && <h2>Error...</h2>}
       {jobs.map((job) => (
         <Job key={job.id} job={job} />
